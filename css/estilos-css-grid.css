@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+ 
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+ 
+  h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+ .navbar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+ }
+
+ .navbar-option{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.25rem;
+    align-items: center;
+ }
+
+ .caja2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.25rem;
+    padding: 3rem;
+ }
+
+ .cajaimg{
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .contenedor{
+     width: 100%;
+ }
+
+ .features-description{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+ }
+
+ .cajafeatures{
+    display: grid;
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+ }
+
+ .titulo{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+ }
+
+ .feature{
+    display: grid;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 1rem;
+ }
+
+ .ubicacion{
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .ContainerCartas{
+    display: grid;
+    gap: 1.25rem;
+    padding: 0 2rem;
+ }
+
+ .cartas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    width: 100%;
+ }
+
+ .tituloUsuarios{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    padding: 2.5rem;
+ }
+
+
+@media screen and (min-width: 801px){
+    nav{
+        background-color: var(--negro2);
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "logo menu";
+    }
+
+    .navbar{
+        grid-template-columns: repeat(1,fr);
+    }
+
+    .logo img{
+        width: 20%;
+     }
+     .logo i{
+        display: none;
+     }
+     .menu{
+        background-color: var(--negro2);
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-self: end;
+    }
+    .menu-hr{
+        display: none;
+    }
+    .item {
+        margin: 0rem;
+        align-self: center;
+        text-decoration: none;
+        color: #fff;
+    }
+     
+    nav a {
+        text-align: left;
+    }
+     
+    nav a:hover {
+        background-color: transparent;
+        color: var(--azuloscuro);
+    }
+     
+    .navbar-button {
+        background-color: var(--azuloscuro);
+        align-self: center;
+    }
+
+    .caja{
+        display: grid;
+    }
+
+    .banner{
+        width: 100%;
+    }
+    
+}
+
+/*Resolución tabletas*/
+@media screen and (max-width:800px) {
+   nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "menu";
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    position: fixed;
+    width: 70%;
+    z-index: 90;
+}
+.logo {
+    grid-area: logo;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo-img menu-bars";
+    background-color: var(--negro2);
+    padding: 1rem;
+}
+.logo img {
+    justify-self: start;
+    width: 50%;
+    max-width: 180px;
+}
+.logo i {
+    grid-area: menu-bars;
+    justify-self: end;
+    color: var(--blanco);
+    font-size: 2rem;
+}
+.menu {
+    grid-area: menu;
+    display: grid;
+    background-color: rgba(1, 10, 52, 0.838);
+}
+.menu-hr {
+    width: 90%;
+    background-color: var(--blanco);
+    justify-self: center; 
+}
+ 
+.item {
+    padding: 1rem 0;
+}
+ 
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+}
+ 
+nav a:hover {
+    background-color: #0B3860;
+    width: 90%;
+}
+ 
+.navbar-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+.banner {
+    background-image: url('../img/index//slide1.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 400px;
+    margin-top: 60px;
+}
+}

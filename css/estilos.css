@@ -1,0 +1,1963 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+
+
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+ 
+  h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+@media screen and (min-width: 801px){
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    padding: 1rem;
+    width: 98%;
+
+}
+
+.item{
+    padding: 1rem;
+    }
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    .logo img{
+        width: 100px;
+        color: #FFFEFC;
+    }
+
+    .item1{
+        background-color: #0B3860;
+        height: 2.5rem;
+        width: 15%;
+        color: #FFFEFC;
+        text-align: center;
+        border-color: #0B3860;
+    }
+
+.caja{
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+
+.menu-hr{
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    background-size: cover;
+}
+
+.texto{
+    background-color: #00000059;
+    color: #fff;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.5em;
+    margin-top: -7%;
+    position: absolute;
+    width: 100%;
+}
+
+.caja2{
+    display: flex;
+    height: 25rem;
+}
+
+.parrafo{
+    text-align: left;
+    margin: 05rem;
+    font-size: 1.2em;
+}
+
+.cajaimg{
+    margin: 05rem;
+}
+
+.imgH{
+    height: 15rem;
+    margin-right: 05rem;
+}
+
+.imgF{
+    height: 30rem;
+    width: 85rem;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+
+}
+
+.cajafeatures{
+    background-image: url(../img/bg-features.png);
+    width: 140%;
+    height: 12rem;
+    padding: 0.5rem;
+}
+
+#features{
+        color: #ffffff;
+        padding-top: 1rem;
+    }
+   
+    .features-title{
+        background-color: rgba(0,0,0,0.35);
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5em;
+    }
+
+    .features-description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .feature{
+        width: 100%;
+        min-width: 180px;
+        max-width: 230px;
+        margin: 0.8rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+     
+    .feature i{
+        font-size: 2.2em;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-blue{
+        background-color: #00325eae;
+    }
+     
+    .feature-black{
+        background-color: rgba(0,0,0,0.59);
+    }
+
+
+    .titulo{
+        text-align: center;
+        margin: 1.5rem;
+        font-size: 3rem;
+    }
+
+    .imgM{
+        margin-left: 24rem;
+        width: 100%;
+    }
+
+    .mapa{
+        width: 100%;
+        margin-left: 40rem;
+    }
+    
+    .textoM{
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    hr{
+        background-color: #88a8ec;
+        width: 45rem;
+        margin-left: 20rem;
+        height: 0.1em;
+    }
+
+    .ContainerCartas{
+        position: relative;
+        height: 20%;
+        width: 100%;
+    }
+
+    .tituloUsuarios{
+        height: 10rem;
+        width: 100%;
+        background-color: #000;
+        color: #FFFEFC;
+        text-align: center;
+    }
+
+    .start{
+        width: 40%;
+        height: 1.5rem;
+        position: absolute;
+        top: 3rem;
+        margin-left: 4rem;
+        color: #FFFEFC;
+    }
+
+    .textoCarta{
+        color: #fff;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .persona1{
+        margin: 1.5rem;
+        border-radius: 0.5rem;
+        background-image: url(../img/fondoAzul.jpeg);
+        background-size: 120%;
+        background-position: center;
+        width: 20rem;
+        height: 15rem;
+        position: absolute;
+        margin-left: 2rem;
+        margin-top: -5rem;
+        padding: 1rem;
+    }
+
+    .imgP1{
+        border-radius: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    .nombre1{
+        text-align: right;
+        top: 1rem;
+        margin-left: 4rem;
+        position: absolute;
+        color: #FFFEFC;
+
+    }
+    .persona2{
+        margin: 1.5rem;
+        border-radius: 0.5rem;
+        background-image: url(../img/fondoAzul.jpeg);
+        background-size: 120%;
+        background-position: center;
+        width: 20rem;
+        height: 15rem;
+        position: absolute;
+        margin-left: 32rem;
+        margin-top: -5rem;
+        padding: 1rem;
+
+
+    }
+
+    .persona3{
+        margin: 1.5rem;
+        border-radius: 0.5rem;
+        background-image: url(../img/fondoAzul.jpeg);
+        background-size: 120%;
+        background-position: center;
+        width: 20rem;
+        height: 15rem;
+        position: absolute;
+        margin-left: 62rem;
+        margin-top: -5rem;
+        padding: 1rem;
+
+    }
+
+
+
+    footer{
+        background-color: #262830;
+        display: flex;
+        color: #ffffff;
+        height: 10rem;
+        padding: 1.5rem;
+        margin-top: 20rem;
+    }
+
+    .redes{
+        text-align: left;
+        margin-top: 2rem;
+        margin-left: 1em;
+
+    }
+
+    .direccion{
+    text-align: center;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+    .Politicas{
+    text-align: right;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.lineaFooter{
+    display: none;
+}
+
+/*Inicio estilos login*/
+
+.body{
+    background-image: url(../img/habitacion.jpg);
+    background-repeat: no-repeat;
+    height: 70rem;
+}
+
+.containerL{
+    background-image: url(../img/FondoBlanco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #3b81bb;
+    margin: 15em;
+    margin-left: 30rem;
+    width: 390px;
+    height: 25rem;
+    padding: 0%;
+    justify-items: flex-start;
+    border-radius: 2px;
+
+}
+
+.logoL{
+    width: 100px;
+    height: 5rem;
+    margin-left: 2rem;
+
+}
+
+.icon{
+    color: #9C2759;
+    margin-left: 10rem;
+    font-size: 51px;    
+}
+
+.icon i{
+    background-color: floralwhite;
+    border-radius: 150px;
+}
+
+
+label{
+    text-align: center;
+    color: #ffffff;
+    margin-left: 3rem;
+    font-size: medium;
+}
+
+input{
+    margin-left: 3rem;
+    margin-top: 0.2rem;
+    border:none;
+    border-radius: 2px;
+    width: 280px;
+    height: 25px;
+
+}
+
+
+.botonL{
+    background-color: #000;
+    height: 30px;
+    width: 285px;
+    margin-left: 3rem;
+    border:none;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.botonLTexto{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.cuentaL{
+    margin-left: 3rem;
+    color: #FFFEFC;
+}
+
+.textL{
+    color: #000;
+    text-decoration: none;
+}
+
+/*Inicio de estilos de formuario Registro*/
+
+
+.bodyR{
+    background-image: url(../img/fondoR.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    position: relative;    
+}
+.caja1R{
+    background-color: #0b3860ce;
+    height: 42rem;
+    width: 30%;
+}
+
+.logoR{
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 12rem;
+    width: 80%;
+}
+
+.textoR{
+    margin: 0rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    color: #FFFEFC;
+}
+
+.FormR{
+    background-color: #fffefcd3;
+    width: 60%;
+    height: 50%;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.tituloFR{
+    text-align: center;
+    margin: 2rem;
+    font-size: 350%;
+}
+
+.form{
+    display: flex;
+    margin-top: -10%;
+    
+}
+
+.TdD{
+    color: #000;
+    margin-top: 10%;
+
+    
+}
+
+.caja1RF{
+    text-align: left;
+    align-items: center;
+    width: 30%;
+    height: 20rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-left: 3%;
+}
+
+.caja2Rf{
+    color: #000;
+    text-align: left;
+    align-items: center;
+    width: 30%;
+    height: 20rem;
+    margin: 1.5rem;
+    padding: 2rem;
+    margin-left: 5%;
+}
+
+.caja3RF{
+    text-align: left;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+.btnR{
+    margin-left: 6rem;
+    height: 2rem;
+    width: 25%;
+    background-color: #262830;
+    border: 5% solid  #000000;
+    border-radius: 5%;
+    color: #FFFEFC;
+}
+
+.enlaceForm{
+    text-decoration: none;
+    color: #FFFEFC;
+}
+
+.inputFR{
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 100%;
+    background-color: #ffffff;
+    border: solid 1px #30334248;
+    margin-top: 2%;
+}
+
+
+.cajasexo{
+    display: flex;
+}
+
+.seleccionArchivo{
+    width: 100%;
+    border: none;
+
+}
+
+.iconoTriangulo i{
+    margin-left: 32%;
+    position: absolute;
+    margin-top: -4%;
+    font-size: 32px;
+    color: #4091d3;
+}
+
+.iconotriangulo2 i{
+    margin-left: 32%;
+    position: absolute;
+    margin-top: -4%;
+    font-size: 32px;
+    color: #3b81bb;
+}
+
+.iconoCuadrado i{
+    margin-left: 32%;
+    position: absolute;
+    margin-top: -3%;
+    font-size: 20px;
+    color: #3676aa;
+}
+
+.modalContenido{
+    background-color: #fffffffa;
+    position: relative;
+    border-radius: 1rem;
+    width: 30px;
+    padding: 5rem;
+    margin: 10rem auto;
+}
+.terminoYc{
+    background-color: #262830;
+    color: #FFFEFC;
+    width: 15px;
+    height: 3rem;
+    margin: 5rem 20rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#miModal:target{
+    opacity:2;
+    pointer-events:auto;
+}
+.modal{
+    border-radius: 1rem;
+    background-color: #00000098;
+    align-content: center;
+    position: absolute;
+    pointer-events: none;
+    transition: all 1s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.salir{
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    color: #ffffff;
+}
+
+.invisibleinp{
+    width: 10%;
+}
+
+.terminos{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.cajaresponsive{
+    display: none;
+}
+/*Empiezan los estilos del dashboard*/
+
+.bodydash{
+    background-image: url(../img/fondodash.jpg);
+    display: flex;
+    position: relative;
+}
+
+.menuL1{
+    background-image: url(../img/Group\ 200.svg);
+    background-color: rgb(4, 4, 138);
+    color: #FFFEFC;
+    height: 15rem;
+    width: 80%;
+}
+
+.LogoResponsive{
+    display: none;
+}
+
+.logoD{
+    width: 10rem;
+    height: 9rem;
+    margin-left: 4rem;
+}
+
+.Textodash{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menuL2{
+    background-color: #262830;
+    color: #FFFEFC;
+    width: 80%;
+    height: 25rem;
+    display: inline-block;
+    text-align: left;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.menuL2 p:hover{
+   background: #2081d6;
+   height: 2.5rem;
+   width: 80%;
+}
+
+.opcionesD{
+    margin-left: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.opcionesD i{
+    font-size: 1.5rem;
+}
+
+.FormD{
+    background-color: #fffefcc7;
+    width: 100%;
+    height: 35rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: inline-block;
+    margin-left: -3px;
+}
+
+.persona3Respons{
+    display: none;
+}
+
+.titulodash{
+    margin: 5px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.caja1D{
+    margin: 1rem;
+    margin-left: 3rem;
+}
+
+.btnD{
+    height: 4rem;
+    background-color: #262830;
+    color: #FFFEFC;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 8rem;
+    border: #262830;
+}
+
+.formDash{
+    display: flex;
+}
+
+.dashAzulcaja i{
+    color: #FFFEFC;
+    font-size: 1.5rem;
+    margin-left: 25px;
+    
+}
+
+.dashAzulcaja{
+    width: 12%;
+    height: 2rem;
+    background-color: #2081d6;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.caja1Dash{
+    color: #000;
+    text-align: left;
+    align-items: center;
+    width: 18rem;
+    height: 20rem;
+    padding: 2rem;
+    align-content: center;
+    position: absolute;
+    margin-top: -18rem;
+    margin-left: 10rem;
+}
+
+.cajasexodash{
+    display: flex;
+}
+
+
+.caja2dash{
+    color: #000;
+    text-align: left;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    position: absolute;
+    margin-left: 33rem;
+    margin-top: -18rem;
+}
+
+
+.inputDash{
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.btn2D{
+    background-color: #262830;
+    width: 55%;
+    height: 2rem;
+    color: #FFFEFC;
+    border: #262830;
+    border-radius: 2px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+}
+
+.inputFR{
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.opD{
+    margin-top: 6.3rem;
+    background-color: #fffefc0e;
+    height: 2.5rem;
+    width: 19rem;
+    float: left;
+    margin-left: 1rem;
+}
+
+.opD i{
+
+    margin-left: 2rem;
+    margin-top: 5px;
+}
+
+.enlaceDash{
+    margin-left: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFEFC;
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+}
+
+/*tablet responsive
+@media screen and (max-width:800px){
+
+    nav{
+        width: 100%;
+    
+    }
+
+    .logo{
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+        height: 20%;
+    }
+    
+    .menu{
+        background-color: rgba(1, 10, 52, 0.838);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        width: 100%;
+    }
+
+    .menu-hr{
+        width: 90%;
+        height: 1px;
+        background-color: var(--blanco);
+        margin-left: 0.5rem;
+    }
+
+    .item{
+    padding: 1rem;
+    }
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    nav a:hover{
+        background-color: #0B3860;
+        width: 100%;
+    }
+    .navbar-button{
+        background-color:transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
+        padding: 5%;
+    }
+        .logo img{
+            width: 300%;
+            max-width: 100px;   
+        }
+        .logo i{
+            color: var(--blanco);
+            font-size: 2rem;
+        }
+    
+    .caja{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .banner{
+        height: 18rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .texto{
+        background-color: #00000059;
+        color: #fff;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5em;
+        position: absolute;
+        margin-top: -12rem;
+        width: 78%;
+    }
+    
+    .caja2{
+        display: flex;
+        height: 9%;
+        width: 85%;
+    }
+    
+    .parrafo{
+        text-align: left;
+        font-size: 1.0em;
+        margin: 1rem;
+        height: 10%;
+    }
+    
+    
+    .imgH{
+        display: none;    
+    }
+    
+    .imgF{
+        height: 30rem;
+        width: 85rem;
+    }
+    
+    .contenedor{
+        position: relative;
+        display: inline-block;
+    
+    }
+    
+    .cajafeatures{
+        background-image: url(../img/bg-features.png);
+        width: 88%;
+        height: 40rem;
+        padding: 0.5rem;
+    }
+    
+    #features{
+            color: #ffffff;
+            padding-top: 1rem;
+        }
+       
+        .features-title{
+            background-color: rgba(0,0,0,0.35);
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1.5em;
+            height: 15%;
+        }
+    
+        .features-description{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .feature{
+            width: 25%;
+            min-width: 180px;
+            max-width: 230px;
+            margin: 0.8rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+         
+        .feature i{
+            font-size: 2.2em;
+            margin-bottom: 1.5rem;
+        }
+    
+        .feature-blue{
+            background-color: #00325eae;
+        }
+         
+        .feature-black{
+            background-color: rgba(0,0,0,0.59);
+        }
+    
+    
+        .titulo{
+            text-align: center;
+            margin: 0.5rem;
+        }
+    
+        .imgM{
+            margin-left: 1rem;
+            width: 12%;
+        }
+
+        iframe{
+            width: 700%;
+        }
+    
+        .mapa{
+            width: 70%;
+            height: 25rem;
+        }
+        
+        .textoM{
+            text-align: center;
+            margin-right: 3rem;
+            margin-left: 1.5rem;
+            font-size: 0.5rem;
+        }
+    
+        hr{
+            background-color: #88a8ec;
+            width: 15rem;
+            margin-left: 0rem;
+            height: 0.1em;
+        }
+
+        .ContainerCartas{
+            justify-content: space-between;
+            position: relative;
+            flex-direction: row;
+        }
+    
+        .tituloUsuarios{
+            height: 10rem;
+            width: 92%;
+            background-color: #000;
+            color: #FFFEFC;
+            text-align: center;
+        }
+    
+        .persona1{
+            margin: 1.0rem;
+            border-radius: 0.5rem;
+            background-color: #0B3860;
+            width: 80%;
+            height: 15rem;
+            position: relative;
+            margin-left: 1rem;
+            margin-top: -5rem;
+            flex-direction: row;
+        }
+    
+        .imgP1{
+            border-radius: 1.5rem;
+            margin: 0.5rem;
+        }
+    
+        .nombre1{
+            text-align: right;
+            top: 1rem;
+            margin-left: 4rem;
+            position: absolute;
+            color: #FFFEFC;
+
+        }
+    
+        .start{
+            width: 40%;
+            height: 1.5rem;
+            position: absolute;
+            top: 3rem;
+            margin-left: 4rem;
+            color: #FFFEFC;
+        }
+
+        .textoCarta{
+            color: #fff;
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
+    
+        .persona2{
+            margin: 1.0rem;
+            border-radius: 0.5rem;
+            background-color: #0B3860;
+            width: 80%;
+            height: 15rem;
+            position: relative;
+            margin-left: 1rem;
+            flex-direction: row;
+        }
+    
+        .persona3{
+            margin: 1.0rem;
+            border-radius: 0.5rem;
+            background-color: #0B3860;
+            width: 80%;
+            height: 15rem;
+            position: relative;
+            margin-left: 1rem;
+            flex-direction: row;
+        }
+    
+    
+    
+        footer{
+            background-color: #262830;
+            display: flex;
+            color: #ffffff;
+            height: 28rem;
+            width: 75%;
+            padding: 1.5rem;
+            position: relative;
+        }
+    
+        .redes{
+            text-align: left;
+            margin-top: 0.3rem;
+            margin-left: 0.3rem;
+    
+        }
+
+        .iconosinicio{
+            position: absolute;
+            margin-top: 12rem;
+        }
+    
+        .direccion{
+        text-align: left;
+        margin-left: 0rem;
+        margin-top: 14rem;
+        margin-right: 10rem;
+        position: absolute;
+
+    }
+    
+        .Politicas{
+        text-align: left;
+        margin-left: 0rem;
+        margin-top: 20rem;
+        position: absolute;
+
+    }
+
+    .lineaFooter{
+        margin-right: 1px;
+        height: 0.1rem;
+        width: 14rem;
+        color: #303342;
+    }
+
+    
+}*/
+
+
+
+/*mobile responsive*/
+@media screen and (max-width:800px){
+
+    nav{
+        width: 100%;
+    
+    }
+
+    .logo{
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+        height: 20%;
+    }
+    
+    .menu{
+        background-color: rgba(1, 10, 52, 0.838);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        width: 100%;
+    }
+
+    .menu-hr{
+        width: 90%;
+        height: 1px;
+        background-color: var(--blanco);
+        margin-left: 0.5rem;
+    }
+
+    .item{
+    padding: 1rem;
+    }
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    nav a:hover{
+        background-color: #0B3860;
+        width: 100%;
+    }
+    .navbar-button{
+        background-color:transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
+        padding: 5%;
+    }
+        .logo img{
+            width: 300%;
+            max-width: 100px;   
+        }
+        .logo i{
+            color: var(--blanco);
+            font-size: 2rem;
+        }
+    
+    .caja{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .banner{
+        height: 18rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .texto{
+        background-color: #00000059;
+        color: #fff;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5em;
+        position: absolute;
+        margin-top: -12rem;
+        width: 78%;
+    }
+    
+    .caja2{
+        display: flex;
+        height: 9%;
+        width: 85%;
+    }
+    
+    .parrafo{
+        text-align: left;
+        font-size: 1.0em;
+        margin: 1rem;
+        height: 10%;
+    }
+    
+    
+    .imgH{
+        display: none;    
+    }
+    
+    .imgF{
+        height: 30rem;
+        width: 85rem;
+    }
+    
+    .contenedor{
+        position: relative;
+        display: inline-block;
+    
+    }
+    
+    .cajafeatures{
+        background-image: url(../img/bg-features.png);
+        width: 100%;
+        height: 40rem;
+        padding: 0.5rem;
+    }
+    
+    #features{
+            color: #ffffff;
+            padding-top: 1rem;
+        }
+       
+        .features-title{
+            background-color: rgba(0,0,0,0.35);
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1.5em;
+            height: 15%;
+        }
+    
+        .features-description{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .feature{
+            width: 25%;
+            min-width: 180px;
+            max-width: 230px;
+            margin: 0.8rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+         
+        .feature i{
+            font-size: 2.2em;
+            margin-bottom: 1.5rem;
+        }
+    
+        .feature-blue{
+            background-color: #00325eae;
+        }
+         
+        .feature-black{
+            background-color: rgba(0,0,0,0.59);
+        }
+    
+    
+        .titulo{
+            text-align: center;
+            margin: 0.5rem;
+        }
+    
+        .imgM{
+            margin-left: 1rem;
+            width: 12%;
+        }
+
+        iframe{
+            width: 700%;
+        }
+    
+        .mapa{
+            width: 100%;
+            height: 25rem;
+        }
+        
+        .textoM{
+            text-align: center;
+            margin-right: 3rem;
+            margin-left: 1.5rem;
+            font-size: 0.5rem;
+        }
+    
+        hr{
+            background-color: #88a8ec;
+            width: 15rem;
+            margin-left: 0rem;
+            height: 0.1em;
+        }
+
+        .ContainerCartas{
+            justify-content: space-between;
+            position: relative;
+            flex-direction: row;
+        }
+    
+        .tituloUsuarios{
+            height: 10rem;
+            width: 100%;
+            background-color: #000;
+            color: #FFFEFC;
+            text-align: center;
+        }
+    
+        .persona1{
+            margin: 1.0rem;
+            border-radius: 0.5rem;
+            background-image: url(../img/fondoAzul.jpeg);
+            background-size: 120%;
+            background-position: center;
+            width: 90%;
+            height: 15rem;
+            position: relative;
+            margin-left: 1rem;
+            margin-top: -5rem;
+            flex-direction: row;
+        }
+    
+        .imgP1{
+            border-radius: 1.5rem;
+            margin: 0.5rem;
+        }
+    
+        .nombre1{
+            text-align: right;
+            top: 1rem;
+            margin-left: 4rem;
+            position: absolute;
+            color: #FFFEFC;
+
+        }
+    
+        .start{
+            width: 40%;
+            height: 1.5rem;
+            position: absolute;
+            top: 3rem;
+            margin-left: 4rem;
+            color: #FFFEFC;
+        }
+
+        .textoCarta{
+            color: #fff;
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
+    
+        .persona2{
+            margin: 1.0rem;
+            border-radius: 0.5rem;
+            background-image: url(../img/fondoAzul.jpeg);
+            background-size: 120%;
+            background-position: center;
+            width: 90%;
+            height: 15rem;
+            position: relative;
+            margin-left: 1rem;
+            flex-direction: row;
+        }
+    
+        .persona3{
+            margin: 1.0rem;
+            border-radius: 0.5rem;
+            background-image: url(../img/fondoAzul.jpeg);
+            background-size: 120%;
+            background-position: center;
+            width: 90%;
+            height: 15rem;
+            position: relative;
+            margin-left: 1rem;
+            flex-direction: row;
+        }
+    
+    
+    
+        footer{
+            background-color: #262830;
+            display: flex;
+            color: #ffffff;
+            height: 28rem;
+            width: 100%;
+            padding: 1.5rem;
+            position: relative;
+        }
+    
+        .redes{
+            text-align: left;
+            margin-top: 0.3rem;
+            margin-left: 0.3rem;
+    
+        }
+
+        .iconosinicio{
+            position: absolute;
+            margin-top: 12rem;
+        }
+    
+        .direccion{
+        text-align: left;
+        margin-left: 0rem;
+        margin-top: 14rem;
+        margin-right: 10rem;
+        position: absolute;
+
+    }
+    
+        .Politicas{
+        text-align: left;
+        margin-left: 0rem;
+        margin-top: 20rem;
+        position: absolute;
+
+    }
+
+    .lineaFooter{
+        margin-right: 1px;
+        height: 0.1rem;
+        width: 14rem;
+        color: #303342;
+    }
+
+    /*Inicio estilos login*/
+
+    .body{
+        background-image: url(../img/habitacion.jpg);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    
+    .containerL{
+        background-image: url(../img/FondoBlanco.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #3b81bb;
+        margin: 15em;
+        margin-left: 10%;
+        margin-right: 5%;
+        width: 100%;
+        height: 25rem;
+        border-radius: 2px;
+    
+    }
+    
+    .logoL{
+        width: 30%;
+        height: 5rem;
+        margin-left: 2rem;
+    
+    }
+    
+    .icon{
+        color: #9C2759;
+        margin-left: 40%;
+        font-size: 250%;    
+    }
+    
+    .icon i{
+        background-color: floralwhite;
+        border-radius: 150px;
+    }
+    
+    
+    label{
+        text-align: center;
+        color: #ffffff;
+        margin-left: 3rem;
+        font-size: medium;
+    }
+    
+    input{
+        margin-left: 3rem;
+        margin-top: 0.2rem;
+        border:none;
+        border-radius: 2px;
+        width: 70%;
+        height: 25px;
+    
+    }
+    
+    
+    .botonL{
+        background-color: #000;
+        height: 30px;
+        width: 70%;
+        margin-left: 3rem;
+        border:none;
+        border-radius: 2px;
+        margin-top: 5px;
+    }
+    
+    .botonLTexto{
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+    
+    }
+    
+    .cuentaL{
+        display: none;
+    }
+    
+    .textL{
+        display: none;
+    }
+
+    /*Inicio de estilos de formuario Registro*/
+
+
+.bodyR{
+    background-image: url(../img/fondoR.jpg);
+    background-repeat: no-repeat;
+    background-size: 500% auto;
+    height: 80%;
+    position: relative;    
+}
+.caja1R{
+    display: none;
+}
+
+.logoR{
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: -5%;
+    width: 30%;
+}
+
+.textoR{
+    margin: 0rem;
+    margin-top: -2rem;
+    margin-left: 5rem;
+    color: #FFFEFC;
+    font-size: 2.5rem;
+}
+
+.FormR{
+    background-color: #fffefcd3;
+    width: 60%;
+    height: 50%;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    margin-left: 25%;
+    position: relative;
+    justify-content: space-around;
+}
+
+.tituloFR{
+    text-align: center;
+    margin: 2rem;
+    font-size: 350%;
+}
+
+.form{
+    margin-top: -10%;
+    
+}
+
+.TdD{
+    color: #000;
+    margin-top: 15%;
+
+    
+}
+
+.cajaresponsive{
+
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-left: 0%;
+    background-color: #0b386098;
+
+}
+.caja1RF{
+    text-align: left;
+    align-items: center;
+    width: 50%;
+    height: 20rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-left: -4%;
+}
+
+.caja2Rf{
+    color: #000;
+    text-align: left;
+    align-items: center;
+    width: 50%;
+    height: 20rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    margin-left: -3%;
+    margin-top: -8%;
+}
+
+.caja3RF{
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    width: 80%;
+
+}
+
+.btnR{
+    margin-left: 6rem;
+    height: 1.5rem;
+    width: 45%;
+    background-color: #262830;
+    border: 5% solid  #000000;
+    border-radius: 5%;
+    color: #FFFEFC;
+}
+
+.enlaceForm{
+    text-decoration: none;
+    color: #FFFEFC;
+}
+
+.inputFR{
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 150%;
+    background-color: #ffffff;
+    border: solid 1px #30334248;
+    margin-top: 2%;
+}
+
+
+.cajasexo{
+    display: flex;
+    margin-top: 2%;
+}
+
+.seleccionArchivo{
+    width: 100%;
+    border: none;
+
+}
+
+.iconoTriangulo i{
+    margin-left: 80%;
+    position: absolute;
+    margin-top: -7%;
+    font-size: 32px;
+    color: #4091d3;
+}
+
+.iconotriangulo2 i{
+    margin-left: 80%;
+    position: absolute;
+    margin-top: -7%;
+    font-size: 32px;
+    color: #3b81bb;
+}
+
+.iconoCuadrado i{
+    margin-left: 80%;
+    position: absolute;
+    margin-top: -5%;
+    font-size: 20px;
+    color: #3676aa;
+}
+
+.modalContenido{
+    background-color: #fffffffa;
+    position: relative;
+    border-radius: 1rem;
+    width: 30px;
+    padding: 5rem;
+    margin: 10rem auto;
+}
+.terminoYc{
+    background-color: #262830;
+    color: #FFFEFC;
+    width: 15px;
+    height: 3rem;
+    margin: 5rem 20rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#miModal:target{
+    opacity:2;
+    pointer-events:auto;
+}
+.modal{
+    border-radius: 1rem;
+    background-color: #00000098;
+    align-content: center;
+    position: absolute;
+    pointer-events: none;
+    transition: all 1s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.salir{
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    color: #ffffff;
+}
+
+.invisibleinp{
+    width: 10%;
+}
+
+.terminos{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+/*Empiezan los estilos del dashboard*/
+
+.bodydash{
+    background-image: url(../img/fondodash.jpg);
+    display: flex;
+    position: relative;
+    background-size: 100%;
+}
+
+.menuL1{
+    background-image: url(../img/Group\ 200.svg);
+    background-color: rgb(4, 4, 138);
+    color: #FFFEFC;
+    height: 15rem;
+    width: 40%;
+}
+
+.LogoResponsive{
+    width: 5rem;
+    height: 9rem;
+    margin-left: 2rem;
+
+
+}
+
+.logoD{
+    display: none;
+}
+
+.Textodash{
+    display: none;
+}
+
+.persona3Respons{
+    width: 50%;
+    margin-left: 40px;
+}
+
+.menuL2{
+    background-color: #262830;
+    color: #FFFEFC;
+    width: 40%;
+    height: 30rem;
+    display: inline-block;
+    text-align: left;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.opcionesD{
+    margin-left: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.opcionesD i{
+    font-size: 1.5rem;
+}
+
+.FormD{
+    background-color: #fffefcc7;
+    width: 400%;
+    height: 50rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-left: -3px;
+}
+
+.titulodash{
+    margin: 5px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.caja1D{
+    margin: 1rem;
+    margin-left: 3rem;
+}
+
+.btnD{
+    height: 4rem;
+    background-color: #262830;
+    color: #FFFEFC;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 8rem;
+    border: #262830;
+}
+
+.formDash{
+    display: flex;
+}
+
+.dashAzulcaja i{
+    color: #FFFEFC;
+    font-size: 1.5rem;
+    margin-left: 25px;
+    
+}
+
+.dashAzulcaja{
+    width: 12%;
+    height: 2rem;
+    background-color: #2081d6;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.caja1Dash{
+    color: #000;
+    text-align: left;
+    align-items: center;
+    width: 18rem;
+    height: 20rem;
+    padding: 2rem;
+    align-content: center;
+    position: absolute;
+    margin-top: -18rem;
+    margin-left: 10rem;
+}
+
+.cajasexodash{
+    display: flex;
+}
+
+
+.caja2dash{
+    color: #000;
+    text-align: left;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    position: absolute;
+    margin-left: 33rem;
+    margin-top: -18rem;
+}
+
+
+.inputDash{
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.btn2D{
+    background-color: #262830;
+    width: 55%;
+    height: 2rem;
+    color: #FFFEFC;
+    border: #262830;
+    border-radius: 2px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+}
+
+.inputFR{
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.opD{
+    margin-top: 6.3rem;
+    background-color: #fffefc0e;
+    height: 2.5rem;
+    width: 19rem;
+    float: left;
+    margin-left: 1rem;
+}
+
+.opD i{
+
+    margin-left: 2rem;
+    margin-top: 5px;
+}
+
+.enlaceDash{
+    display: none;
+}
+}

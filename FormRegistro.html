@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Registro de usuarios</title>
+</head>
+<body class="bodyR">
+    
+    <div class="caja1R">
+        <img src="img/Hotelia horizontal blanco.svg" class="logoR">
+        <h1 class="textoR">Eres mas que bienvenido</h1>
+    </div>
+
+    <div class="cajaresponsive">
+        <img src="img/Hotelia horizontal blanco.svg" class="logoR">
+        <h1 class="textoR">Un lugar en tu corazon</h1>
+    </div>
+
+    <div class="FormR">
+        <h1 class="tituloFR">Registrate</h1>
+
+            <form class="form">
+               <div class="caja1RF">
+                    <label class="TdD" for="text">Tipo de Documento</label>
+                    <div class="iconoTriangulo"><input type="text" value="Escoja una opcion" class="inputFR"><i class="fa-solid fa-caret-down"></i></div><br>
+
+                    <label class="TdD" for="text">Nombres</label>
+                    <input type="text" placeholder="Escoja una opcion" class="inputFR"><br>
+
+                    <label class="TdD" for="text">Fecha de Nacimiento</label>
+                    <div class="iconoCuadrado"><input type="text" class="inputFR"><i class="fa-solid fa-square"></i></div><br>
+
+                    <label class="TdD" for="text">Email</label>
+                    <input type="text" value="Escoja una opcion" class="inputFR">
+
+                    <label class="TdD" for="text">Pais de Origen</label>
+                    <div class="iconotriangulo2"><input type="text" class="inputFR"><i class="fa-solid fa-caret-down"></i></div>
+
+                    <label class="TdD" for="password">Contraseña</label>
+                    <input type="password" class="inputFR"><br>
+            </div> 
+
+            <div class="caja2Rf">
+                <label class="TdD" for="text">Numero de Documento</label>
+                <input type="text" class="inputFR"><br>
+
+                <label class="TdD" for="text">Apellido</label>
+                <input type="text" class="inputFR"><br>
+
+                <label class="TdD">Genero</label><br>
+                <span class="cajasexo">
+                <input type="radio" name="genero" value="mujer" checked>Mujer 
+                <input type="radio" name="genero" value="hombre" checked>Hombre 
+                <input type="radio" name="genero" value="Otro" checked>Otro <br><br><br>
+                </span>
+ 
+                <label class="TdD" for="text">Telefono de Contacto</label>
+                <input type="text" class="inputFR"><br><br>
+                
+
+                <label class="TdD" for="text">Foto</label>
+                <input type="file" name="imagen" class="seleccionArchivo"><br>
+
+                <label class="TdD" for="text">Confirmar Contraseña</label>
+                <input type="password" class="inputFR"><br>
+            </div>
+        </form>
+        <div class="caja3RF">
+            <p>
+            <input class="invisibleinp" type="checkbox" name="politicas" checked><a class="terminos" href="#mimodal">Acepto terminos y Condiciones</a></p><br>
+            <div id="mimodal" class="modal">
+                <div class="modalContenido">
+                    <h1>Terminos y Condiciones</h1> <br>
+                    <p>
+                    Estos Terminos del Servicio reflejan la forma de trabajar
+                    de Google como empresa, las leyes por las que nos rejimos
+                    y determinamos aspectos que siempre hemos creido que son
+                    ciertos. Por ello, estos Terminos del Sericio ayudan a definir
+                    la relacion que tiene Google contigo cuando interactuas con nuestros
+                    servicios. Por ejemplo, estos terminos incluyen las siguientes
+                    secciones: </p><br>
+                    <p>
+                    Que puedes esperar de nosotros, donde se describe como
+                    porporcionamos y desarrollamos nuestros servicios. Lo 
+                    que esperamos de ti. Donde se establece ciertas reglas
+                    para utilizar nuestros servicios.</p><br>
+                    
+                    <button type="submit" class="terminoYc"><a class="salir" href="#">Aceptar</a></button>
+                </div>
+            </div>
+            <button class="btnR"><a href="dashboard.html" class="enlaceForm">Ingresar</a></button>
+        </div>
+    </div>
+</body>
+</html>
