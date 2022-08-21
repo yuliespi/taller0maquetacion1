@@ -81,9 +81,6 @@ nav{
     display: none;
 }
 
-.menuOculto{
-    display: none;
-}
 
 .banner{
     width: 100%;
@@ -636,8 +633,9 @@ input{
 }
 
 .menuL1{
-    background-image: url(../img/Group\ 200.svg);
-    background-color: rgb(4, 4, 138);
+    background-image: url(../img/fondoAzul.jpeg);
+    background-size: 130%;
+    background-position: center;
     color: #FFFEFC;
     height: 15rem;
     width: 80%;
@@ -669,6 +667,7 @@ input{
     text-align: left;
     padding-top: 3rem;
     font-size: 1.5rem;
+    margin-top: -1.1rem;
 }
 
 .menuL2 p:hover{

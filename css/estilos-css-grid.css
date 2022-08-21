@@ -331,60 +331,106 @@ body{
 @media screen and (max-width: 800px){
     
     nav{
+        /*display: grid;
+        grid-area: nav;
         background-color: var(--negro2);
         grid-template-columns: 200px auto;
         grid-template-areas: 
-        "logo menu";
+        "logo" 
+        "menu";
+        position: fixed;
+        width: 100%;
+        z-index: 100;*/
+        width: 100%;
+
     }
 
-    .navbar{
-        grid-template-columns: repeat(1,fr);
+    /*.navbar{
         display: grid;
+        grid-area: nav;
+        background-color: var(--negro2);
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "logo" 
+        "menu";
+        position: fixed;
+        width: 100%;
+        z-index: 100;
         justify-content: space-between;
-        width: 98%;
         font-family: 'Marcellus', serif;
         font-size: 1.3em;
         padding: 1rem;
+    }*/
+
+    .logo {
+        grid-area: logo;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo-img fa-bars";
+        background-color: var(--negro2);
+        padding: 1rem;
+        height: 20%;
     }
+    
 
         .logo img{
             width: 300%;
-            max-width: 100px;   
+            max-width: 100px; 
+            justify-self: start;  
         }
      
      .logo i{
-        display: none;
+        grid-area: menu-bars;
+        justify-self: end;
+        color: var(--blanco);
+        font-size: 2rem;
      }
      .menu{
-        background-color: var(--negro2);
+        background-color: rgba(1, 10, 52, 0.838);
+        grid-area: menu;
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-self: end;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 200px;
+        justify-content: center;
     }
     .menu-hr{
         width: 90%;
         height: 1px;
         background-color: var(--blanco);
+        justify-self: center;
         margin-left: 0.5rem;
     }
     .item {
         margin: 0rem;
+        padding: 1rem 0;
         align-self: center;
         text-decoration: none;
         color: #fff;
     }
      
     nav a {
-        text-align: left;
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
     }
      
     nav a:hover {
         background-color: transparent;
+        width: 100%;
         color: var(--azuloscuro);
     }
      
     .navbar-button {
-        background-color: var(--azuloscuro);
+        background-color: transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: 'Marcellus', serif;
+        color: var(--blanco);
         align-self: center;
     }
 
@@ -394,6 +440,10 @@ body{
 
     .banner{
         width: 100%;
+        background-image: url('../img/index//slide1.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        min-height: 400px;
     }
 
     .texto{
@@ -416,6 +466,7 @@ body{
 
      .imgH{
         width: 70%;
+        margin-left: 5rem;
     }
 
     .cajaimg{
@@ -455,7 +506,7 @@ body{
    
     .cajafeatures{
        background-image: url(../img/bg-features.png);
-       display: grid;
+       display: block;
        gap: 1rem;
        padding: 0.5rem;
        width: 100%;
@@ -470,17 +521,14 @@ body{
    
     .feature{
        display: grid;
-       justify-content: center;
        gap: 1.25rem;
        padding: 1rem;
        margin: 0.8rem;
-       width: 25%;
-       min-width: 180px;
-       max-width: 230px;
+       width: 70%;
        flex-direction: column;
        justify-content: center;
-       align-items:stretch;
-       border-radius: 5px;
+       align-items:center;
+
     }
     
    
@@ -518,11 +566,29 @@ body{
        display: grid;
        gap: 1.25rem;
        padding: 0 2rem;
+       flex-direction: row;
     }
    
     .cartascontenedorcajas{
+        width: 200%;
+        display: grid;
        margin-left: 5rem;
+       animation:  cambio  20s infinite ;
+    animation-direction:alternate-reverse;
+
    }
+
+   @keyframes cambio {
+            
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+
+    300%{margin-left: -300%;}
+}
    
     .tituloUsuarios{
        height: 10rem;
@@ -535,12 +601,6 @@ body{
        width: 100%;
    }
    
-    .cartas{
-       display: grid;
-       grid-template-columns: repeat(3,1fr);
-       gap: 2rem;
-       width: 100%;
-    }
    
     .start{
        width: 40%;
@@ -557,12 +617,12 @@ body{
    }
    
    .persona1{
-       margin: 1.5rem;
+       margin: 5rem;
        border-radius: 0.5rem;
        background-image: url(../img/fondoAzul.jpeg);
        background-size: 120%;
        background-position: center;
-       width: 20rem;
+       width: 44%;
        height: 15rem;
        position: absolute;
        margin-left: 2rem;
@@ -585,12 +645,12 @@ body{
    }
    
    .persona2{
-       margin: 1.5rem;
+       margin: 2rem;
        border-radius: 0.5rem;
        background-image: url(../img/fondoAzul.jpeg);
        background-size: 120%;
        background-position: center;
-       width: 20rem;
+       width: 44%;
        height: 15rem;
        position: absolute;
        margin-left: 26rem;
@@ -599,12 +659,12 @@ body{
    }
    
    .persona3{
-       margin: 1.5rem;
+       margin: 2rem;
        border-radius: 0.5rem;
        background-image: url(../img/fondoAzul.jpeg);
        background-size: 120%;
        background-position: center;
-       width: 20rem;
+       width: 44%;
        height: 15rem;
        position: absolute;
        margin-left: 50rem;
