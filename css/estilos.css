@@ -81,6 +81,10 @@ nav{
     display: none;
 }
 
+.menuOculto{
+    display: none;
+}
+
 .banner{
     width: 100%;
     background-size: cover;
@@ -214,6 +218,10 @@ nav{
         width: 100%;
     }
 
+    .cartascontenedorcajas{
+        margin-left: 5rem;
+    }
+
     .tituloUsuarios{
         height: 10rem;
         width: 100%;
@@ -273,7 +281,7 @@ nav{
         width: 20rem;
         height: 15rem;
         position: absolute;
-        margin-left: 32rem;
+        margin-left: 26rem;
         margin-top: -5rem;
         padding: 1rem;
 
@@ -289,7 +297,7 @@ nav{
         width: 20rem;
         height: 15rem;
         position: absolute;
-        margin-left: 62rem;
+        margin-left: 50rem;
         margin-top: -5rem;
         padding: 1rem;
 
@@ -816,336 +824,6 @@ input{
 
 }
 
-/*tablet responsive
-@media screen and (max-width:800px){
-
-    nav{
-        width: 100%;
-    
-    }
-
-    .logo{
-        background-color: var(--negro2);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-        width: 100%;
-        height: 20%;
-    }
-    
-    .menu{
-        background-color: rgba(1, 10, 52, 0.838);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; 
-        width: 100%;
-    }
-
-    .menu-hr{
-        width: 90%;
-        height: 1px;
-        background-color: var(--blanco);
-        margin-left: 0.5rem;
-    }
-
-    .item{
-    padding: 1rem;
-    }
-    nav a{
-        color: var(--blanco);
-        text-decoration: none;
-        text-align: center;
-    }
-    nav a:hover{
-        background-color: #0B3860;
-        width: 100%;
-    }
-    .navbar-button{
-        background-color:transparent;
-        border: none;
-        border-radius: 3px;
-        font-size: 1em;
-        font-family: 'Marcellus', serif;
-        color: var(--blanco);
-        padding: 5%;
-    }
-        .logo img{
-            width: 300%;
-            max-width: 100px;   
-        }
-        .logo i{
-            color: var(--blanco);
-            font-size: 2rem;
-        }
-    
-    .caja{
-        position: relative;
-        display: inline-block;
-    }
-    
-    .banner{
-        height: 18rem;
-        width: 100%;
-        position: relative;
-    }
-    
-    .texto{
-        background-color: #00000059;
-        color: #fff;
-        text-align: center;
-        padding: 0.5rem;
-        font-size: 1.5em;
-        position: absolute;
-        margin-top: -12rem;
-        width: 78%;
-    }
-    
-    .caja2{
-        display: flex;
-        height: 9%;
-        width: 85%;
-    }
-    
-    .parrafo{
-        text-align: left;
-        font-size: 1.0em;
-        margin: 1rem;
-        height: 10%;
-    }
-    
-    
-    .imgH{
-        display: none;    
-    }
-    
-    .imgF{
-        height: 30rem;
-        width: 85rem;
-    }
-    
-    .contenedor{
-        position: relative;
-        display: inline-block;
-    
-    }
-    
-    .cajafeatures{
-        background-image: url(../img/bg-features.png);
-        width: 88%;
-        height: 40rem;
-        padding: 0.5rem;
-    }
-    
-    #features{
-            color: #ffffff;
-            padding-top: 1rem;
-        }
-       
-        .features-title{
-            background-color: rgba(0,0,0,0.35);
-            text-align: center;
-            padding: 0.5rem;
-            font-size: 1.5em;
-            height: 15%;
-        }
-    
-        .features-description{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-    
-        .feature{
-            width: 25%;
-            min-width: 180px;
-            max-width: 230px;
-            margin: 0.8rem;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5px;
-        }
-         
-        .feature i{
-            font-size: 2.2em;
-            margin-bottom: 1.5rem;
-        }
-    
-        .feature-blue{
-            background-color: #00325eae;
-        }
-         
-        .feature-black{
-            background-color: rgba(0,0,0,0.59);
-        }
-    
-    
-        .titulo{
-            text-align: center;
-            margin: 0.5rem;
-        }
-    
-        .imgM{
-            margin-left: 1rem;
-            width: 12%;
-        }
-
-        iframe{
-            width: 700%;
-        }
-    
-        .mapa{
-            width: 70%;
-            height: 25rem;
-        }
-        
-        .textoM{
-            text-align: center;
-            margin-right: 3rem;
-            margin-left: 1.5rem;
-            font-size: 0.5rem;
-        }
-    
-        hr{
-            background-color: #88a8ec;
-            width: 15rem;
-            margin-left: 0rem;
-            height: 0.1em;
-        }
-
-        .ContainerCartas{
-            justify-content: space-between;
-            position: relative;
-            flex-direction: row;
-        }
-    
-        .tituloUsuarios{
-            height: 10rem;
-            width: 92%;
-            background-color: #000;
-            color: #FFFEFC;
-            text-align: center;
-        }
-    
-        .persona1{
-            margin: 1.0rem;
-            border-radius: 0.5rem;
-            background-color: #0B3860;
-            width: 80%;
-            height: 15rem;
-            position: relative;
-            margin-left: 1rem;
-            margin-top: -5rem;
-            flex-direction: row;
-        }
-    
-        .imgP1{
-            border-radius: 1.5rem;
-            margin: 0.5rem;
-        }
-    
-        .nombre1{
-            text-align: right;
-            top: 1rem;
-            margin-left: 4rem;
-            position: absolute;
-            color: #FFFEFC;
-
-        }
-    
-        .start{
-            width: 40%;
-            height: 1.5rem;
-            position: absolute;
-            top: 3rem;
-            margin-left: 4rem;
-            color: #FFFEFC;
-        }
-
-        .textoCarta{
-            color: #fff;
-            margin: 0.5rem;
-            padding: 0.5rem;
-        }
-    
-        .persona2{
-            margin: 1.0rem;
-            border-radius: 0.5rem;
-            background-color: #0B3860;
-            width: 80%;
-            height: 15rem;
-            position: relative;
-            margin-left: 1rem;
-            flex-direction: row;
-        }
-    
-        .persona3{
-            margin: 1.0rem;
-            border-radius: 0.5rem;
-            background-color: #0B3860;
-            width: 80%;
-            height: 15rem;
-            position: relative;
-            margin-left: 1rem;
-            flex-direction: row;
-        }
-    
-    
-    
-        footer{
-            background-color: #262830;
-            display: flex;
-            color: #ffffff;
-            height: 28rem;
-            width: 75%;
-            padding: 1.5rem;
-            position: relative;
-        }
-    
-        .redes{
-            text-align: left;
-            margin-top: 0.3rem;
-            margin-left: 0.3rem;
-    
-        }
-
-        .iconosinicio{
-            position: absolute;
-            margin-top: 12rem;
-        }
-    
-        .direccion{
-        text-align: left;
-        margin-left: 0rem;
-        margin-top: 14rem;
-        margin-right: 10rem;
-        position: absolute;
-
-    }
-    
-        .Politicas{
-        text-align: left;
-        margin-left: 0rem;
-        margin-top: 20rem;
-        position: absolute;
-
-    }
-
-    .lineaFooter{
-        margin-right: 1px;
-        height: 0.1rem;
-        width: 14rem;
-        color: #303342;
-    }
-
-    
-}*/
-
-
 
 /*mobile responsive*/
 @media screen and (max-width:800px){
@@ -1264,7 +942,8 @@ input{
     
     .cajafeatures{
         background-image: url(../img/bg-features.png);
-        width: 100%;
+        width: 100rem;
+        min-width: 100%;
         height: 40rem;
         padding: 0.5rem;
     }
@@ -1343,8 +1022,8 @@ input{
     
         hr{
             background-color: #88a8ec;
-            width: 15rem;
-            margin-left: 0rem;
+            width: 18rem;
+            margin-left: 26%;
             height: 0.1em;
         }
 
@@ -1352,6 +1031,31 @@ input{
             justify-content: space-between;
             position: relative;
             flex-direction: row;
+            max-width: 120em;
+            width: 100%;
+        }
+
+        .cartascontenedorcajas{
+            width: 200%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: -10%;
+            padding: 0.5em;
+            animation:  cambio  20s infinite ;
+            animation-direction:alternate-reverse;
+        }
+
+        @keyframes cambio {
+            
+            0%{margin-left: 0;}
+            20%{margin-left: 0;}
+
+            25%{margin-left: -100%;}
+
+            50%{margin-left: -200%;}
+
+            300%{margin-left: -300%;}
         }
     
         .tituloUsuarios{
@@ -1368,11 +1072,12 @@ input{
             background-image: url(../img/fondoAzul.jpeg);
             background-size: 120%;
             background-position: center;
-            width: 90%;
+            width: calc(100% / 3 );
             height: 15rem;
+            min-height: 10vh;
             position: relative;
             margin-left: 1rem;
-            margin-top: -5rem;
+            margin-top: -4rem;
             flex-direction: row;
         }
     
@@ -1411,10 +1116,12 @@ input{
             background-image: url(../img/fondoAzul.jpeg);
             background-size: 120%;
             background-position: center;
-            width: 90%;
+            width: calc(100% / 3 );
             height: 15rem;
+            min-height: 10vh;
             position: relative;
             margin-left: 1rem;
+            margin-top: -4rem;
             flex-direction: row;
         }
     
@@ -1424,10 +1131,12 @@ input{
             background-image: url(../img/fondoAzul.jpeg);
             background-size: 120%;
             background-position: center;
-            width: 90%;
+            width: calc(100% / 3);
+            min-height: 10vh;
             height: 15rem;
             position: relative;
             margin-left: 1rem;
+            margin-top: -4rem;
             flex-direction: row;
         }
     

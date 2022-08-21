@@ -8,21 +8,43 @@
     <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
     <title>Hotelia</title>
 </head>
+
+<script type="text/javascript">
+    function Abrir(){
+        document.getElementById("menuOculto").style.display = "Block";
+    }
+
+    function Ocultar(){
+        document.getElementById("menuOculto").style.display = "none";
+    }
+
+   function Todo(){
+         var menuOculto =document.getElementById("menuOculto");
+
+         if(menuOculto.style.display == "block"){
+            Ocultar();
+         }else{
+            Abrir();
+         }
+    }
+
+</script>
 <body>
     <header>
         <nav>
             <div class="logo">
               <img src="img/Hotelia horizontal blanco.svg">
-              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-bars" onclick="Todo()"></i>
             </div>
-
-            <div class="menu">
-                <a href="index.html" class="item">Inicio</a>
-                <a href=""class="item">Ubicacion</a>
-                <a href=""class="item">Opiniones</a>
-                <hr class="menu-hr" noshade="">
-                <a href="login.html"class="item1"><button class="navbar-button"><i class="fa-solid fa-user"></i>Iniciar Sesion</a></button>
-            </div>
+              <div id="menuOculto">
+                    <div class="menu">
+                        <a href="index.html" class="item">Inicio</a>
+                        <a href=""class="item">Ubicacion</a>
+                        <a href=""class="item">Opiniones</a>
+                        <hr class="menu-hr" noshade="">
+                        <a href="login.html"class="item1"><button class="navbar-button"><i class="fa-solid fa-user"></i>Iniciar Sesion</a></button>
+                    </div>
+              </div>  
         </nav>
     </header>
  
@@ -85,8 +107,10 @@
     </section>
 
     <section class="ContainerCartas">
-        <div class="tituloUsuarios"><h1>Nuestros usuarios dicen...</h1></div>
-        <div class="persona1">
+        <div class="tituloUsuarios"><h1>Nuestros usuarios dicen...</h1>
+        </div>
+         <div class="cartascontenedorcajas">
+            <div class="persona1">
             
             <img src="img/persona1.png" class="imgP1">
                 <h2 class="nombre1">Diego Rodriguez</h2><br>
@@ -97,9 +121,9 @@
              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</span>
 
-        </div>
+            </div>
 
-        <div class="persona2">
+         <div class="persona2">
             
             <img src="img/persona1.png" class="imgP1">
                 <h2 class="nombre1">Diego Rodriguez</h2><br>
@@ -110,9 +134,9 @@
              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</span>
 
-        </div>
+         </div>
 
-        <div class="persona3">
+         <div class="persona3">
             
             <img src="img/persona1.png" class="imgP1">
                 <h2 class="nombre1">Diego Rodriguez</h2><br>
@@ -123,8 +147,10 @@
             <span class="textoCarta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</span>
+         </div>   
 
         </div> 
+        
     </section>
 
     <footer>

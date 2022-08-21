@@ -25,13 +25,46 @@ body{
     font-family: 'Marcellus', serif;
 }
 
- .navbar{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-between;
-    width: 100%;
+@media screen and (min-width: 801px){
+
+    nav{
+        background-color: var(--negro2);
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "logo menu";
+    }
+
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        width: 98%;
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
+        padding: 1rem;
+    }
+
+ .item{
     padding: 1rem;
- }
+    }
+
+    .menu-hr{
+        display: none;
+    }
+
+    .banner{
+        width: 100%;
+        background-size: cover;
+    }
+    
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+    }
+    .logo img{
+        width: 100px;
+        color: #FFFEFC;
+    }
 
  .navbar-option{
     display: grid;
@@ -40,12 +73,40 @@ body{
     align-items: center;
  }
 
+ .navbar-button{
+    background-color:#337AB7;
+    border-radius: 3px;
+    font-size: 0.7em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);}
+    
+
+.caja{
+    position: relative;       
+}
+
+.texto{
+    position: absolute;
+    margin-top: -10%;
+    background-color: #00000059;
+    color: #fff;
+    text-align: left;
+    font-size: 1.5em;
+    width: 100%;
+
+}
+
  .caja2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 0.25rem;
     padding: 3rem;
  }
+
+.imgH{
+    width: 90%;
+}
 
  .cajaimg{
     display: grid;
@@ -56,6 +117,7 @@ body{
 
  .contenedor{
      width: 100%;
+     position: relative;
  }
 
  .features-description{
@@ -64,7 +126,21 @@ body{
     gap: 1rem;
  }
 
+ #features{
+    color: #ffffff;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
  .cajafeatures{
+    background-image: url(../img/bg-features.png);
     display: grid;
     gap: 1rem;
     padding: 0.5rem;
@@ -82,7 +158,26 @@ body{
     justify-content: center;
     gap: 1.25rem;
     padding: 1rem;
+    margin: 0.8rem;
+    width: 100%;
+    min-width: 180px;
+    max-width: 230px;
  }
+
+ .feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+
+.feature-blue{
+    background-color: #00325eae;
+    border-radius: 1rem;
+}
+ 
+.feature-black{
+    background-color: rgba(0,0,0,0.59);
+    border-radius: 1rem;
+}
 
  .ubicacion{
     display: grid;
@@ -91,11 +186,31 @@ body{
     width: 100%;
  }
 
+ .textoM{
+    text-align: center;
+    margin: 0.5rem;
+}
+
  .ContainerCartas{
     display: grid;
     gap: 1.25rem;
     padding: 0 2rem;
  }
+
+ .cartascontenedorcajas{
+    margin-left: 5rem;
+}
+
+ .tituloUsuarios{
+    height: 10rem;
+    width: 100%;
+    background-color: #000;
+    color: #FFFEFC;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
 
  .cartas{
     display: grid;
@@ -104,21 +219,117 @@ body{
     width: 100%;
  }
 
- .tituloUsuarios{
-    display: grid;
-    justify-content: center;
-    width: 100%;
- }
+ .start{
+    width: 40%;
+    height: 1.5rem;
+    position: absolute;
+    top: 3rem;
+    margin-left: 4rem;
+    color: #FFFEFC;
+}
+.textoCarta{
+    color: #fff;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.persona1{
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    background-image: url(../img/fondoAzul.jpeg);
+    background-size: 120%;
+    background-position: center;
+    width: 20rem;
+    height: 15rem;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: -5rem;
+    padding: 1rem;
+}
+
+.imgP1{
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+}
+
+.nombre1{
+    text-align: right;
+    top: 1rem;
+    margin-left: 4rem;
+    position: absolute;
+    color: #FFFEFC;
+
+}
+
+.persona2{
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    background-image: url(../img/fondoAzul.jpeg);
+    background-size: 120%;
+    background-position: center;
+    width: 20rem;
+    height: 15rem;
+    position: absolute;
+    margin-left: 26rem;
+    margin-top: -5rem;
+    padding: 1rem;
+
+
+}
+
+.persona3{
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    background-image: url(../img/fondoAzul.jpeg);
+    background-size: 120%;
+    background-position: center;
+    width: 20rem;
+    height: 15rem;
+    position: absolute;
+    margin-left: 50rem;
+    margin-top: -5rem;
+    padding: 1rem;
+
+}
+
 
  .footer{
+    background-color: #262830;
+    color: #ffffff;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
     padding: 2.5rem;
+    margin-top: 15rem;
+    height: 15rem;
  }
 
+ .redes{
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 1em;
 
-@media screen and (min-width: 801px){
+}
+
+.direccion{
+    text-align: center;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+    .Politicas{
+    text-align: right;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.lineaFooter{
+    display: none;
+}
+}
+/*responsive mobile*/
+@media screen and (max-width: 800px){
+    
     nav{
         background-color: var(--negro2);
         grid-template-columns: 200px auto;
@@ -128,11 +339,19 @@ body{
 
     .navbar{
         grid-template-columns: repeat(1,fr);
+        display: grid;
+        justify-content: space-between;
+        width: 98%;
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
+        padding: 1rem;
     }
 
-    .logo img{
-        width: 20%;
-     }
+        .logo img{
+            width: 300%;
+            max-width: 100px;   
+        }
+     
      .logo i{
         display: none;
      }
@@ -143,7 +362,10 @@ body{
         justify-self: end;
     }
     .menu-hr{
-        display: none;
+        width: 90%;
+        height: 1px;
+        background-color: var(--blanco);
+        margin-left: 0.5rem;
     }
     .item {
         margin: 0rem;
@@ -173,84 +395,261 @@ body{
     .banner{
         width: 100%;
     }
+
+    .texto{
+        background-color: #00000059;
+        color: #fff;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5em;
+        position: absolute;
+        margin-top: -9rem;
+        width: 100%;
+    }
     
+    .caja2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.25rem;
+        padding: 3rem;
+     }
+
+     .imgH{
+        width: 70%;
+    }
+
+    .cajaimg{
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .contenedor{
+        width: 100%;
+        position: relative;
+        display: grid;
+    }
+   
+    .features-description{
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       gap: 1rem;
+       justify-content: space-around;
+
+    }
+   
+    #features{
+       color: #ffffff;
+       padding-top: 1rem;
+       text-align: center;
+       
+   }
+   
+   .features-title{
+       background-color: rgba(0,0,0,0.35);
+       text-align: center;
+       padding: 0.5rem;
+       font-size: 1.5em;
+   }
+   
+    .cajafeatures{
+       background-image: url(../img/bg-features.png);
+       display: grid;
+       gap: 1rem;
+       padding: 0.5rem;
+       width: 100%;
+    }
+   
+    .titulo{
+       width: 100%;
+       display: grid;
+       justify-content: left;
+       margin-left: 5rem;
+    }
+   
+    .feature{
+       display: grid;
+       justify-content: center;
+       gap: 1.25rem;
+       padding: 1rem;
+       margin: 0.8rem;
+       width: 25%;
+       min-width: 180px;
+       max-width: 230px;
+       flex-direction: column;
+       justify-content: center;
+       align-items:stretch;
+       border-radius: 5px;
+    }
+    
+   
+    .feature i{
+       font-size: 2.2em;
+       margin-bottom: 1.5rem;
+   }
+   
+   .feature-blue{
+       background-color: #00325eae;
+       border-radius: 1rem;
+       columns: 1;
+
+   }
+    
+   .feature-black{
+       background-color: rgba(0,0,0,0.59);
+       border-radius: 1rem;
+       row-gap: 2;
+   }
+   
+    .ubicacion{
+       display: grid;
+       gap: 0.5rem;
+       justify-content: center;
+       width: 100%;
+    }
+   
+    .textoM{
+       text-align: center;
+       margin: 0.5rem;
+   }
+   
+    .ContainerCartas{
+       display: grid;
+       gap: 1.25rem;
+       padding: 0 2rem;
+    }
+   
+    .cartascontenedorcajas{
+       margin-left: 5rem;
+   }
+   
+    .tituloUsuarios{
+       height: 10rem;
+       width: 100%;
+       background-color: #000;
+       color: #FFFEFC;
+       text-align: center;
+       display: grid;
+       justify-content: center;
+       width: 100%;
+   }
+   
+    .cartas{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 2rem;
+       width: 100%;
+    }
+   
+    .start{
+       width: 40%;
+       height: 1.5rem;
+       position: absolute;
+       top: 3rem;
+       margin-left: 4rem;
+       color: #FFFEFC;
+   }
+   .textoCarta{
+       color: #fff;
+       margin: 0.5rem;
+       padding: 0.5rem;
+   }
+   
+   .persona1{
+       margin: 1.5rem;
+       border-radius: 0.5rem;
+       background-image: url(../img/fondoAzul.jpeg);
+       background-size: 120%;
+       background-position: center;
+       width: 20rem;
+       height: 15rem;
+       position: absolute;
+       margin-left: 2rem;
+       margin-top: -5rem;
+       padding: 1rem;
+   }
+   
+   .imgP1{
+       border-radius: 1.5rem;
+       margin: 0.5rem;
+   }
+   
+   .nombre1{
+       text-align: right;
+       top: 1rem;
+       margin-left: 4rem;
+       position: absolute;
+       color: #FFFEFC;
+   
+   }
+   
+   .persona2{
+       margin: 1.5rem;
+       border-radius: 0.5rem;
+       background-image: url(../img/fondoAzul.jpeg);
+       background-size: 120%;
+       background-position: center;
+       width: 20rem;
+       height: 15rem;
+       position: absolute;
+       margin-left: 26rem;
+       margin-top: -5rem;
+       padding: 1rem;
+   }
+   
+   .persona3{
+       margin: 1.5rem;
+       border-radius: 0.5rem;
+       background-image: url(../img/fondoAzul.jpeg);
+       background-size: 120%;
+       background-position: center;
+       width: 20rem;
+       height: 15rem;
+       position: absolute;
+       margin-left: 50rem;
+       margin-top: -5rem;
+       padding: 1rem;
+   
+   }
+   
+   
+    .footer{
+       background-color: #262830;
+       color: #ffffff;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 3rem;
+       padding: 2.5rem;
+       margin-top: 15rem;
+       height: 15rem;
+    }
+   
+    .redes{
+       text-align: left;
+       margin-top: 2rem;
+       margin-left: 1em;
+   
+   }
+   
+   .direccion{
+       text-align: center;
+       margin-left: 5rem;
+       margin-top: 2rem;
+   }
+   
+       .Politicas{
+       text-align: right;
+       margin-left: 6rem;
+       margin-top: 2rem;
+   }
+   
+   .lineaFooter{
+    margin-right: 1px;
+    height: 0.1rem;
+    width: 14rem;
+    color: #303342;
+   }
 }
 
-/*Resolución tabletas*/
-@media screen and (max-width:800px) {
-   nav {
-    grid-area: nav;
-    display: grid;
-    grid-template-areas:
-        "logo"
-        "menu";
-    font-family: 'Marcellus', serif;
-    font-size: 1.3em;
-    position: fixed;
-    width: 70%;
-    z-index: 90;
-}
-.logo {
-    grid-area: logo;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "logo-img menu-bars";
-    background-color: var(--negro2);
-    padding: 1rem;
-}
-.logo img {
-    justify-self: start;
-    width: 50%;
-    max-width: 180px;
-}
-.logo i {
-    grid-area: menu-bars;
-    justify-self: end;
-    color: var(--blanco);
-    font-size: 2rem;
-}
-.menu {
-    grid-area: menu;
-    display: grid;
-    background-color: rgba(1, 10, 52, 0.838);
-}
-.menu-hr {
-    width: 90%;
-    background-color: var(--blanco);
-    justify-self: center; 
-}
- 
-.item {
-    padding: 1rem 0;
-}
- 
-nav a {
-    color: var(--blanco);
-    text-decoration: none;
-    text-align: center;
-}
- 
-nav a:hover {
-    background-color: #0B3860;
-    width: 90%;
-}
- 
-.navbar-button {
-    background-color: transparent;
-    border: none;
-    border-radius: 3px;
-    font-size: 1em;
-    padding: 0.5rem;
-    font-family: 'Marcellus', serif;
-    color: var(--blanco);
-}
-.banner {
-    background-image: url('../img/index//slide1.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-    min-height: 400px;
-    margin-top: 60px;
-}
-}
+
