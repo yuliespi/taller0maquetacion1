@@ -28,8 +28,11 @@ body{
 @media screen and (min-width: 801px){
 
     nav{
+        display: grid;
         background-color: var(--negro2);
+        grid-template-columns: repeat(2,1fr);
         grid-template-columns: 200px auto;
+        justify-content: space-between;
         grid-template-areas: 
         "logo menu";
     }
@@ -43,6 +46,12 @@ body{
         font-size: 1.3em;
         padding: 1rem;
     }
+    .navbar-option{
+    display: grid;
+    margin-left: 10rem;
+ }
+
+    
 
  .item{
     padding: 1rem;
@@ -65,13 +74,6 @@ body{
         width: 100px;
         color: #FFFEFC;
     }
-
- .navbar-option{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 0.25rem;
-    align-items: center;
- }
 
  .navbar-button{
     background-color:#337AB7;
@@ -326,7 +328,12 @@ body{
 .lineaFooter{
     display: none;
 }
+
+
+
 }
+
+
 /*responsive mobile*/
 @media screen and (max-width: 800px){
     
@@ -345,22 +352,6 @@ body{
 
     }
 
-    /*.navbar{
-        display: grid;
-        grid-area: nav;
-        background-color: var(--negro2);
-        grid-template-columns: 200px auto;
-        grid-template-areas: 
-        "logo" 
-        "menu";
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-        justify-content: space-between;
-        font-family: 'Marcellus', serif;
-        font-size: 1.3em;
-        padding: 1rem;
-    }*/
 
     .logo {
         grid-area: logo;

@@ -41,6 +41,10 @@ nav{
 
 }
 
+.menuOculto{
+    display: none;
+}
+
 .item{
     padding: 1rem;
     }
@@ -54,12 +58,10 @@ nav{
     }
 
     .item1{
-        background-color: #0B3860;
         height: 2.5rem;
         width: 15%;
         color: #FFFEFC;
         text-align: center;
-        border-color: #0B3860;
     }
 
 .caja{
@@ -68,6 +70,7 @@ nav{
 }
 
 .navbar-button{
+    background-color:#337AB7;
     background-color:transparent;
     border: none;
     border-radius: 3px;
@@ -821,8 +824,316 @@ input{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*Estilos registro habitacion*/
+
+.bodyRH{
+    background-image: url(../img/sala.webp);
+    background-size: cover;
+    display: flex;
+    position: relative;
 }
 
+.caja1RH{
+    background-color: #FFFEFC;
+    height: 100vh;
+    width: 20%;
+
+}
+
+.FormRH{
+    background-color: #fffefcd3;
+    width: 70%;
+    height: 90vh;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.tituloRH{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2em;
+}
+
+.caja2RH{
+    text-align: left;
+    align-items: center;
+    width: 30%;
+    height: 20rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    margin-left: 3%;
+    margin-top: -3rem;
+}
+
+.caja3RH{
+    text-align: left;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    float: right;
+    margin-top: -23rem;
+}
+
+.textolabelR{
+    color: #000;
+}
+
+.inputRH{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+    width: 150%;
+    margin-top: 0.9rem;
+}
+
+.inputsRH{
+    display: flex;
+    position: relative;
+}
+
+.inputmasRH #mas{
+    margin-top: 2rem;
+    font-size: 1.2rem; 
+    background-color: #000; 
+    color: #fff;
+}
+
+.inputmenosRH #menos{
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: #000; 
+    color: #fff;
+
+}
+.textolabelRH{
+    margin-top: 1rem;
+    color: #000000;
+}
+
+.input2RH1{
+    width: 95px;
+    margin-left: -4.5rem;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+}
+
+.inputRH1{
+    width: 95px;
+    margin-left: -2.6rem;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+}
+.input2RH{
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+}
+
+
+.textoDescripcionRH{
+    color: #000;
+    margin-left: 6rem;
+}
+
+.caja4RH{
+    margin-top: -10rem;
+    margin-left: 1rem;
+}
+
+.inputtextoRH{
+    margin-left: 6rem;
+    width: 84%;
+    height: 5rem;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+}
+
+.caja5RH{
+    display: flex;
+    color: #000;
+    width: 100%;
+    margin-left: 3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.caja5RH input{
+    width: 15%;
+    margin-left: -0.5rem;
+    margin-top: 0.5rem;
+}
+
+.caja5RH i{
+    color: #000;
+    font-size: 160%;
+    margin-left: 3rem;
+    margin-top: -1.5rem;
+}
+
+.botonRH{
+    background-color: #303342;
+    color: #fff;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+    border-radius: 0.1rem;
+    margin-left: 25rem;
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+/*Estilos busqueda habitacion*/
+
+.padreBH{
+    display: flex;
+}
+
+.tituloBH{
+    width: 25%;
+    height: 6vh;
+    background-color: #3277b3;
+    margin-top: 40px;
+    margin-left: 250px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.titulo1BH{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.caja1BH{
+    width: 30%;
+    height: 20rem;
+    margin-top: 7rem;
+    border-radius: 0.5rem;
+    margin-left: -24rem;
+    box-shadow: 1px 2px 1px 2px #5c7cb498;
+}
+.textoBH{
+    color: #000;
+}
+
+.inputBH1{
+    background-color: #FFFEFC;
+    box-shadow: 0px 0px 1px 1px #5c7cb498;
+    width: 50%;
+    height: 30px;
+    align-items: center;
+    margin: 1rem;
+}
+
+#opcionesBH{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 50%;
+    height: 30px;
+    color: #2081d6;
+    margin: 1rem;
+    box-shadow: 0px 0px 1px 1px #5c7cb498;
+}
+
+.btnBH{
+    margin-left: 7rem;
+    background-color: #000000;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.enlacebtnBH{
+    text-decoration: none;
+    color: #FFFEFC;
+}
+
+.cajagrandeBH{
+    margin:  5rem;
+    margin-top: 7rem;
+    width: 38%;
+    height: 90vh;
+    padding: 1rem;
+}
+
+.HabitacionesB{
+    margin: 4px;
+    width: 40%;
+    height: 15rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+    margin-left: 1rem;
+}
+
+.imgBh{
+    width: 98%;
+    height: 70%;
+    position: relative;
+}
+
+.HabitacionDobleBh{
+    width: 14.9%;
+    height: 5%;
+    background-color: #228debbb;
+    position: absolute;
+    margin-left: -201px;
+    margin-top: 8.5rem;
+}
+
+.HabitacionDobleBh{
+    color: #FFFEFC;
+    text-align: center;
+}
+
+.titulo2BH{
+    text-align: center;
+}
+
+.btnreservar2BH{
+    background-color: #000000;
+    color: #FFFEFC;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 2px;
+}
+
+.HabitacionesBH2{
+        margin: 6px;
+        width: 40%;
+        height: 15rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 1px 2px 1px 2px #5c7cb498;
+        margin-left: 17rem;
+        margin-top: -34.8rem;
+}
+
+.HabitacionesBH3{
+    margin: 6px;
+        width: 40%;
+        height: 15rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 1px 2px 1px 2px #5c7cb498;
+        margin-left: 17rem;     
+}
+
+.btnreservar3BH{
+    background-color: #2081d6;
+    color: #FFFEFC;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 2px;
+    border-color: #2081d6;
+}
+}
 
 /*mobile responsive*/
 @media screen and (max-width:800px){
@@ -941,9 +1252,8 @@ input{
     
     .cajafeatures{
         background-image: url(../img/bg-features.png);
-        width: 100rem;
-        min-width: 100%;
-        height: 40rem;
+        width: 100%;
+        height: 40%;
         padding: 0.5rem;
     }
     
@@ -1069,7 +1379,7 @@ input{
             margin: 1.0rem;
             border-radius: 0.5rem;
             background-image: url(../img/fondoAzul.jpeg);
-            background-size: 120%;
+            background-size: 130%;
             background-position: center;
             width: calc(100% / 3 );
             height: 15rem;
