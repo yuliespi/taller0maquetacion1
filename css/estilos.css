@@ -2344,5 +2344,346 @@ input{
     color: #fff;
     text-decoration: none;
 }
+/*Estilos busqueda habitacion*/
 
+.padreBH{
+    display: flex;
+}
+
+.tituloBH{
+    width: 25%;
+    height: 6vh;
+    background-color: #3277b3;
+    margin-top: 40px;
+    margin-left: 250px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.titulo1BH{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.caja1BH{
+    width: 30%;
+    height: 20rem;
+    margin-top: 7rem;
+    border-radius: 0.5rem;
+    margin-left: -24rem;
+    box-shadow: 1px 2px 1px 2px #5c7cb498;
+}
+.textoBH{
+    color: #000;
+}
+
+.inputBH1{
+    background-color: #FFFEFC;
+    box-shadow: 0px 0px 1px 1px #5c7cb498;
+    width: 50%;
+    height: 30px;
+    align-items: center;
+    margin: 1rem;
+}
+
+#opcionesBH{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 50%;
+    height: 30px;
+    color: #2081d6;
+    margin: 1rem;
+    box-shadow: 0px 0px 1px 1px #5c7cb498;
+}
+
+.btnBH{
+    margin-left: 7rem;
+    background-color: #000000;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.enlacebtnBH{
+    text-decoration: none;
+    color: #FFFEFC;
+}
+
+.cajagrandeBH{
+    margin:  5rem;
+    margin-top: 7rem;
+    width: 38%;
+    height: 90vh;
+    padding: 1rem;
+}
+
+.HabitacionesB{
+    margin: 4px;
+    width: 40%;
+    height: 15rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+    margin-left: 1rem;
+}
+
+.imgBh{
+    width: 98%;
+    height: 70%;
+    position: relative;
+}
+
+.HabitacionDobleBh{
+    width: 14.9%;
+    height: 5%;
+    background-color: #228debbb;
+    position: absolute;
+    margin-left: -201px;
+    margin-top: 8.5rem;
+}
+
+.HabitacionDobleBh{
+    color: #FFFEFC;
+    text-align: center;
+}
+
+.titulo2BH{
+    text-align: center;
+}
+
+.btnreservar2BH{
+    background-color: #000000;
+    color: #FFFEFC;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 2px;
+}
+
+.HabitacionesBH2{
+        margin: 6px;
+        width: 40%;
+        height: 15rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 1px 2px 1px 2px #5c7cb498;
+        margin-left: 17rem;
+        margin-top: -34.8rem;
+}
+
+.HabitacionesBH3{
+    margin: 6px;
+        width: 40%;
+        height: 15rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 1px 2px 1px 2px #5c7cb498;
+        margin-left: 17rem;     
+}
+
+.btnreservar3BH{
+    background-color: #2081d6;
+    color: #FFFEFC;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    border-radius: 2px;
+    border-color: #2081d6;
+}
+
+/*Habitacion*/
+
+.bodyHab{
+    display: flex;
+    position: relative;
+}
+
+.menulateraH{
+   width: 30%;
+}
+.menuH1{
+    background-image: url(../img/fondoAzul.jpeg);
+    background-size: 190%;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 100%;
+    margin-left: 0rem;
+    background-position: cover;
+    
+}
+.TextoHab{
+    color: rgb(12, 12, 12);
+    margin-left: 5.5rem;
+    margin-top: -2rem;
+    font-size: 0.8rem;
+}
+
+.logoH{
+    margin-top: 2rem;
+    width: 60%;
+    margin-left: 2rem;
+}
+.persona3Habi{
+    width: 20%;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    margin-top: 6rem;
+}
+
+.menuLH2{
+    background-color: #262830;
+    color: #FFFEFC;
+    width: 100%;
+    height: 170vh;
+    display: inline-block;
+    text-align: left;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    margin-top: -10rem;
+}
+
+.menuLH2 p:hover{
+    background: #2081d6;
+    height: 3.5rem;
+    width: 80%;
+ }
+.enlaceH{
+    margin-left: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFEFC;
+    font-size: 1.7rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tituloH3{
+    margin-left: 20rem;
+    text-align: center;
+    width: 50%;
+}
+.caja1H{
+    width: 100%;
+    height: 10%;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    background-color: #5a5c5e1f;
+}
+.labelH2{
+    color: #000000;
+    text-align: center;
+    margin-left: 25rem;
+    padding: 1rem;
+}
+
+.labelH1{
+    color: #000000;
+    text-align: center;
+    margin-left: 3rem;
+    padding: 1rem;
+}
+
+.opcionHabi{
+    width: 10%;
+    height: 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #5c7cb498;
+}
+
+.cajagrandeH{
+    width: 115%;
+    margin-top: 20rem;
+    margin-top: -4rem;
+    position: relative;
+}
+
+
+.HabitacionesH1{
+    background-color: #f1f1f1;
+    width: 22%;
+    height: 25rem;
+    margin-top: 7rem;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    box-shadow: 1px 2px 1px 2px #5c7cb498;
+}
+
+.HabitacionesH2{
+    background-color: #f1f1f1;
+    width: 32%;
+    height: 25rem;
+    margin-top: 7rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    box-shadow: 1px 2px 1px 2px #5c7cb498;
+}
+.imgH{
+    width: 80%;
+    height: 40%;
+    position: relative;
+    margin: 1rem;
+    margin-left: 1.8rem;
+}
+.HabitacionDobleH{
+    width: 17.9%;
+    height: 3.8%;
+    color: #f1f1f1;
+    background-color: #228debbb;
+    background-position: center;    
+    position: absolute;
+    text-align: center;
+    margin-left: -15.3rem;
+    margin-top: 9rem;
+}
+
+.HabitacionDobleH1{
+    width: 17.9%;
+    height: 3.8%;
+    color: #f1f1f1;
+    background-color: #228debbb;
+    position: absolute;
+    text-align: center;
+    margin-left: -15.3rem;
+    margin-top: 9rem;
+}
+
+.textH{
+    margin: 0.5rem;
+}
+.btnmodificar1H{
+    background-color: #443c3c;
+    border: none;
+    color: #FFFEFC;
+    font-size: 1rem;
+    text-align: center;
+    width: 40%;
+    height: 8%;
+    margin-left: 1rem;
+    border-radius: 2px;
+}
+
+.btninactivar2H{
+    background-color: #9C2759;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 1rem;
+    width: 40%;
+    height: 8%;
+    border: none;
+    border-radius: 2px;
+}
+.cajagrande2H{
+    margin-left: 24rem;
+    margin-top: -64rem;
+    width: 70%;
+}
+
+.cajagrande3H{
+    margin-left: 47rem;
+    margin-top: -64rem;
+    width: 70%;
+}
 }
