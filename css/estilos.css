@@ -27,7 +27,7 @@ body{
     font-family: 'Marcellus', serif;
 }
 
-@media screen and (min-width: 801px){
+@media screen and (min-width: 901px){
 
 nav{
     display: flex;
@@ -103,19 +103,21 @@ nav{
 }
 
 .parrafo{
+    width: 65%;
     text-align: left;
-    margin: 05rem;
+    padding: 4rem;
     font-size: 1.2em;
 }
 
 .cajaimg{
-    margin: 05rem;
+    padding: 4rem;
+    width: 45%;
 }
 
-.imgH{
-    height: 15rem;
-    margin-right: 05rem;
+.cajaimg img{
+    width: 60%;
 }
+
 
 .imgF{
     height: 30rem;
@@ -215,7 +217,11 @@ nav{
     }
 
     .cartascontenedorcajas{
-        margin-left: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
     }
 
     .tituloUsuarios{
@@ -229,7 +235,6 @@ nav{
     .start{
         width: 40%;
         height: 1.5rem;
-        position: absolute;
         top: 3rem;
         margin-left: 4rem;
         color: #FFFEFC;
@@ -241,7 +246,7 @@ nav{
         padding: 0.5rem;
     }
     
-    .persona1{
+    .persona{
         margin: 1.5rem;
         border-radius: 0.5rem;
         background-image: url(../img/fondoAzul.jpeg);
@@ -249,57 +254,15 @@ nav{
         background-position: center;
         width: 20rem;
         height: 15rem;
-        position: absolute;
-        margin-left: 2rem;
-        margin-top: -5rem;
         padding: 1rem;
-    }
-
-    .imgP1{
-        border-radius: 1.5rem;
-        margin: 0.5rem;
+        min-width: 350px;
     }
 
     .nombre1{
         text-align: right;
-        top: 1rem;
-        margin-left: 4rem;
-        position: absolute;
         color: #FFFEFC;
 
     }
-    .persona2{
-        margin: 1.5rem;
-        border-radius: 0.5rem;
-        background-image: url(../img/fondoAzul.jpeg);
-        background-size: 120%;
-        background-position: center;
-        width: 20rem;
-        height: 15rem;
-        position: absolute;
-        margin-left: 26rem;
-        margin-top: -5rem;
-        padding: 1rem;
-
-
-    }
-
-    .persona3{
-        margin: 1.5rem;
-        border-radius: 0.5rem;
-        background-image: url(../img/fondoAzul.jpeg);
-        background-size: 120%;
-        background-position: center;
-        width: 20rem;
-        height: 15rem;
-        position: absolute;
-        margin-left: 50rem;
-        margin-top: -5rem;
-        padding: 1rem;
-
-    }
-
-
 
     footer{
         background-color: #262830;
@@ -583,6 +546,7 @@ input{
     width: 100%;
     height: 20%;
     margin: 0%;
+    color: #FFFEFC;
     background: linear-gradient(to right, #2081d6, #0B3860);
 }
 
@@ -637,6 +601,8 @@ input{
 
 .bodydash{
     background-image: url(../img/fondodash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     position: relative;
 }
@@ -667,6 +633,7 @@ input{
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 .menuL2{
     background-color: #262830;
     color: #FFFEFC;
@@ -677,6 +644,10 @@ input{
     padding-top: 3rem;
     font-size: 1.5rem;
     margin-top: -1.1rem;
+}
+
+.menuL2Respon{
+    display: none;
 }
 
 .menuL2 p:hover{
@@ -698,7 +669,7 @@ input{
 
 .FormD{
     background-color: #fffefcc7;
-    width: 100%;
+    width: 80%;
     height: 35rem;
     margin: 1rem;
     border-radius: 0.5rem;
@@ -841,9 +812,9 @@ input{
     position: relative;
 }
 
-.menuL1{
+/*.menuL1{
     display: none;
-}
+}*/
 
 .caja1RH{
     background-color: #FFFEFC;
@@ -1346,7 +1317,7 @@ input{
 }
 
 /*mobile responsive*/
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
 
     nav{
         width: 100%;
@@ -1585,31 +1556,20 @@ input{
             text-align: center;
         }
     
-        .persona1{
-            margin: 1.0rem;
+        .persona{
+            margin: 1.5rem;
             border-radius: 0.5rem;
             background-image: url(../img/fondoAzul.jpeg);
-            background-size: 130%;
+            background-size: 120%;
             background-position: center;
-            width: calc(100% / 3 );
+            width: 20rem;
             height: 15rem;
-            min-height: 10vh;
-            position: relative;
-            margin-left: 1rem;
-            margin-top: -4rem;
-            flex-direction: row;
-        }
-    
-        .imgP1{
-            border-radius: 1.5rem;
-            margin: 0.5rem;
+            padding: 1rem;
+            min-width: 350px;
         }
     
         .nombre1{
             text-align: right;
-            top: 1rem;
-            margin-left: 4rem;
-            position: absolute;
             color: #FFFEFC;
 
         }
@@ -1617,7 +1577,6 @@ input{
         .start{
             width: 40%;
             height: 1.5rem;
-            position: absolute;
             top: 3rem;
             margin-left: 4rem;
             color: #FFFEFC;
@@ -1628,39 +1587,7 @@ input{
             margin: 0.5rem;
             padding: 0.5rem;
         }
-    
-        .persona2{
-            margin: 1.0rem;
-            border-radius: 0.5rem;
-            background-image: url(../img/fondoAzul.jpeg);
-            background-size: 120%;
-            background-position: center;
-            width: calc(100% / 3 );
-            height: 15rem;
-            min-height: 10vh;
-            position: relative;
-            margin-left: 1rem;
-            margin-top: -4rem;
-            flex-direction: row;
-        }
-    
-        .persona3{
-            margin: 1.0rem;
-            border-radius: 0.5rem;
-            background-image: url(../img/fondoAzul.jpeg);
-            background-size: 120%;
-            background-position: center;
-            width: calc(100% / 3);
-            min-height: 10vh;
-            height: 15rem;
-            position: relative;
-            margin-left: 1rem;
-            margin-top: -4rem;
-            flex-direction: row;
-        }
-    
-    
-    
+
         footer{
             background-color: #262830;
             display: flex;
@@ -1910,7 +1837,6 @@ input{
 .inputFR{
     border-radius: 0.2rem;
     height: 1.5rem;
-    width: 150%;
     background-color: #ffffff;
     border: solid 1px #30334248;
     margin-top: 2%;
@@ -1952,59 +1878,71 @@ input{
     color: #3676aa;
 }
 
-.modalContenido{
-    background-color: #fffffffa;
-    position: relative;
-    border-radius: 1rem;
-    width: 30px;
-    padding: 5rem;
-    margin: 10rem auto;
-}
-.terminoYc{
-    background-color: #262830;
-    color: #FFFEFC;
-    width: 15px;
-    height: 3rem;
-    margin: 5rem 20rem;
-    border-radius: 1rem;
+/*Modal de condiciones*/
+.open-modal{
+    background-color: #fffefcd3;
     border: none;
-    font-size: 18px;
-    text-decoration: none;
+    margin-left: -25%;
+    color: rgb(17, 17, 17);
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#miModal:target{
-    opacity:2;
-    pointer-events:auto;
-}
-.modal{
-    border-radius: 1rem;
-    background-color: #00000098;
-    align-content: center;
-    position: absolute;
-    pointer-events: none;
-    transition: all 1s;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
+.modal-header h2{
+    width: 100%;
+    height: 20%;
+    margin: 0%;
+    color: #FFFEFC;
+    background: linear-gradient(to right, #2081d6, #0B3860);
 }
 
-.salir{
-    text-decoration: none;
-    font-family: 'Marcellus', serif;
-    color: #ffffff;
-}
-
-.invisibleinp{
+.open-modal input{
     width: 10%;
-}
 
-.terminos{
-    margin-top: 20px;
-    text-decoration: none;
-    color: #000000;
 }
+.modal { 
+    width: 30%;
+    height: 50%;
+    position: fixed;
+    text-align: center;
+    margin-top: -30%;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+
+  .close-modal{
+    background-color: #2b2929;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 5%;
+  }
+
+  .modal-header button{
+    width: 20%;
+    height: 15%;
+  }
+
+  .modal-content{
+    text-align: center;
+    margin: 2%;
+  }
+
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+   
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
 /*Empiezan los estilos del dashboard*/
 
 .bodydash{
@@ -2026,8 +1964,6 @@ input{
     width: 5rem;
     height: 9rem;
     margin-left: 2rem;
-
-
 }
 
 .logoD{
@@ -2044,6 +1980,10 @@ input{
 }
 
 .menuL2{
+    display: none;
+}
+
+.menuL2Respon{
     background-color: #262830;
     color: #FFFEFC;
     width: 40%;
@@ -2061,16 +2001,22 @@ input{
 
 .opcionesD i{
     font-size: 1.5rem;
+    color: #FFFEFC;
+    align-items: center;
 }
 
 .FormD{
     background-color: #fffefcc7;
-    width: 400%;
-    height: 50rem;
+    width: 100%;
+    height: 220vh;
     margin: 1rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     position: relative;
-    margin-left: -3px;
+}
+
+.formDash{
+    padding: 1rem;
 }
 
 .titulodash{
@@ -2082,23 +2028,13 @@ input{
 
 .caja1D{
     margin: 1rem;
-    margin-left: 3rem;
+    margin-left: 5rem;
 }
 
 .btnD{
-    height: 4rem;
-    background-color: #262830;
-    color: #FFFEFC;
-    border-radius: 0.2rem;
-    margin-top: 1rem;
-    font-size: 1rem;
-    width: 8rem;
-    border: #262830;
+    display: none;
 }
 
-.formDash{
-    display: flex;
-}
 
 .dashAzulcaja i{
     color: #FFFEFC;
@@ -2108,7 +2044,7 @@ input{
 }
 
 .dashAzulcaja{
-    width: 12%;
+    width: 50%;
     height: 2rem;
     background-color: #2081d6;
     border-radius: 2px;
@@ -2119,13 +2055,11 @@ input{
     color: #000;
     text-align: left;
     align-items: center;
-    width: 18rem;
+    width: 100%;
     height: 20rem;
     padding: 2rem;
-    align-content: center;
-    position: absolute;
-    margin-top: -18rem;
-    margin-left: 10rem;
+    margin-top: 1rem;
+    margin-left: -5rem;
 }
 
 .cajasexodash{
@@ -2137,12 +2071,12 @@ input{
     color: #000;
     text-align: left;
     align-items: center;
-    width: 20rem;
+    width: 100%;
     height: 20rem;
     padding: 2rem;
     position: absolute;
-    margin-left: 33rem;
-    margin-top: -18rem;
+    margin-left: -5rem;
+    margin-top: 5rem;
 }
 
 
@@ -2167,7 +2101,6 @@ input{
 .inputFR{
     border-radius: 0.2rem;
     height: 1.5rem;
-    width: 100%;
 }
 
 .opD{
@@ -2180,14 +2113,11 @@ input{
 }
 
 .opD i{
-
+    color: #FFFEFC;
     margin-left: 2rem;
     margin-top: 5px;
 }
 
-.enlaceDash{
-    display: none;
-}
 
 /*Estilos registro habitacion*/
 

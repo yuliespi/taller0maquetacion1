@@ -9,26 +9,6 @@
     <title>Hotelia</title>
 </head>
 
-<script type="text/javascript">
-    function Abrir(){
-        document.getElementById("menuOculto").style.display = "Block";
-    }
-
-    function Ocultar(){
-        document.getElementById("menuOculto").style.display = "none";
-    }
-
-   function Todo(){
-         var menuOculto =document.getElementById("menuOculto");
-
-         if(menuOculto.style.display == "block"){
-            Ocultar();
-         }else{
-            Abrir();
-         }
-    }
-
-</script>
 <body>
     <header>
         <nav>
@@ -67,7 +47,7 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </span>
         <div class="cajaimg">
-            <img src="img/Hotelia negro vertical.svg" class="imgH">
+            <img src="img/Hotelia negro vertical.svg">
         </div>
     </div>
 
@@ -110,7 +90,7 @@
         <div class="tituloUsuarios"><h1>Nuestros usuarios dicen...</h1>
         </div>
          <div class="cartascontenedorcajas">
-            <div class="persona1">
+            <div class="persona">
             
             <img src="img/persona1.png" class="imgP1">
                 <h2 class="nombre1">Diego Rodriguez</h2><br>
@@ -123,20 +103,20 @@
 
             </div>
 
-         <div class="persona2">
+         <div class="persona">
             
             <img src="img/persona1.png" class="imgP1">
                 <h2 class="nombre1">Diego Rodriguez</h2><br>
                 <div class="start">
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </div> <br>            
+                </div>       
             <span class="textoCarta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</span>
 
          </div>
 
-         <div class="persona3">
+         <div class="persona">
             
             <img src="img/persona1.png" class="imgP1">
                 <h2 class="nombre1">Diego Rodriguez</h2><br>
@@ -176,5 +156,6 @@
     </div>   
     </footer>
     
+    <script src="js/menu.js"></script>
 </body>
 </html>
