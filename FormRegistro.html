@@ -71,29 +71,37 @@
         </form>
         <div class="caja3RF">
             <p>
-            <input class="invisibleinp" type="checkbox" name="politicas" checked><a class="terminos" href="#mimodal">Acepto terminos y Condiciones</a></p><br>
-            <div id="mimodal" class="modal">
-                <div class="modalContenido">
-                    <h1>Terminos y Condiciones</h1> <br>
-                    <p>
-                    Estos Terminos del Servicio reflejan la forma de trabajar
-                    de Google como empresa, las leyes por las que nos rejimos
-                    y determinamos aspectos que siempre hemos creido que son
-                    ciertos. Por ello, estos Terminos del Sericio ayudan a definir
-                    la relacion que tiene Google contigo cuando interactuas con nuestros
-                    servicios. Por ejemplo, estos terminos incluyen las siguientes
-                    secciones: </p><br>
-                    <p>
-                    Que puedes esperar de nosotros, donde se describe como
-                    porporcionamos y desarrollamos nuestros servicios. Lo 
-                    que esperamos de ti. Donde se establece ciertas reglas
-                    para utilizar nuestros servicios.</p><br>
-                    
-                    <button type="submit" class="terminoYc"><a class="salir" href="#">Aceptar</a></button>
+            <button class="open-modal" type="button" data-open="modal1"><input  type="checkbox">Acepto terminos y Condiciones</button>
+            
+            <div class="modal" id="modal1">
+                <div class="modal-dialog">
+                    <header class="modal-header">
+                        <h2>Terminos y Condiciones</h2>
+                    </header>
+                    <section class="modal-content">
+                        <p>Estos Terminos del Servicio reflejan la forma de trabajar
+                            de Google como empresa, las leyes por las que nos rejimos
+                            y determinamos aspectos que siempre hemos creido que son
+                            ciertos. Por ello, estos Terminos del Sericio ayudan a definir
+                            la relacion que tiene Google contigo cuando interactuas con nuestros
+                            servicios. Por ejemplo, estos terminos incluyen las siguientes
+                            secciones: </p><br>
+                            <p>
+                            Que puedes esperar de nosotros, donde se describe como
+                            porporcionamos y desarrollamos nuestros servicios. Lo 
+                            que esperamos de ti. Donde se establece ciertas reglas
+                            para utilizar nuestros servicios.</p>
+                    </section>
+                    <header class="modal-header">
+                        <button class="close-modal" aria-label="close modal" data-close>Aceptar</button><br>
+                        </header>
                 </div>
-            </div>
+                </div>
+
+
             <button class="btnR"><a href="dashboard.html" class="enlaceForm">Ingresar</a></button>
         </div>
     </div>
+    <script src="js/registro.js"></script>
 </body>
 </html>
