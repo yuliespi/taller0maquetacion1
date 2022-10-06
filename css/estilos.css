@@ -1715,7 +1715,9 @@ input{
     }
     
     .textL{
-        display: none;
+        color: #000;
+        margin-left: 13rem;
+        text-decoration: none;
     }
 
     /*Inicio de estilos de formuario Registro*/
