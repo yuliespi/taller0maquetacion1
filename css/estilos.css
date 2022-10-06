@@ -236,7 +236,7 @@ nav{
         width: 40%;
         height: 1.5rem;
         top: 3rem;
-        margin-left: 4rem;
+        margin-left: 5rem;
         color: #FFFEFC;
     }
 
@@ -259,9 +259,9 @@ nav{
     }
 
     .nombre1{
-        text-align: right;
+        text-align: center;
         color: #FFFEFC;
-
+        margin-top: -15%;
     }
 
     footer{
@@ -1418,7 +1418,7 @@ input{
     
     
     .cajaimg img{
-        width: 50%;
+        display: none;
     }
     
     .imgF{
@@ -1570,8 +1570,9 @@ input{
         }
     
         .nombre1{
-            text-align: right;
+            text-align: center;
             color: #FFFEFC;
+            margin-top: -15%;
 
         }
     
@@ -1579,7 +1580,7 @@ input{
             width: 40%;
             height: 1.5rem;
             top: 3rem;
-            margin-left: 4rem;
+            margin-left: 5rem;
             color: #FFFEFC;
         }
 
@@ -1608,7 +1609,7 @@ input{
 
         .iconosinicio{
             position: absolute;
-            margin-top: 12rem;
+            margin-top: 18rem;
         }
     
         .direccion{
