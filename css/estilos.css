@@ -115,7 +115,7 @@ nav{
 }
 
 .cajaimg img{
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -1416,8 +1416,8 @@ input{
     }
     
     
-    .imgH{
-        display: none;    
+    .cajaimg img{
+        width: 50%;
     }
     
     .imgF{
