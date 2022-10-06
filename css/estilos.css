@@ -559,7 +559,8 @@ input{
     height: 50%;
     position: fixed;
     text-align: center;
-    margin-top: -30%;
+    margin-top: -40%;
+    margin-left: -10%;
     padding: 1rem;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
